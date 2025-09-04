@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+
+    <!-- Console Appender -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Rolling HTML File Appender -->
+    <appender name="HTML_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/mine.html</file>
+        <append>true</append> <!-- keep adding logs instead of overwriting -->
+
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="ch.qos.logback.classic.html.HTMLLayout"/>
+        </encoder>
+
+        <!-- Rolling Policy: size + time based -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily, keep history for 10 days -->
+            <fileNamePattern>logs/mine-%d{yyyy-MM-dd}.%i.html</fileNamePattern>
+            <maxHistory>10</maxHistory>
+            <maxFileSize>30KB</maxFileSize> <!-- rollover when >10MB -->
+            <totalSizeCap>1GB</totalSizeCap> <!-- optional: cleanup if too many files -->
+        </rollingPolicy>
+    </appender>
+
+    <!-- Root logger -->
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="HTML_FILE"/>
+    </root>
+
+</configuration>

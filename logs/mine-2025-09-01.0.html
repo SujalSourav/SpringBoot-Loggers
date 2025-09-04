@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Sep 01 09:07:48 IST 2025</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="MDC">MDC</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:07:48,561</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:07:48,580</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:07:48,585</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameService.checkGuess(int) with value: Too high! Try again.</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:07:48,585</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:07:48,585</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.guessNumber(int,Model) with value: result</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:07:48,600</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:08:45,707</td>
+<td class="Thread">RMI TCP Connection(9)-127.0.0.1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin</td>
+<td class="MDC"></td>
+<td class="Message">Application shutdown requested.</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:08:45,715</td>
+<td class="Thread">RMI TCP Connection(9)-127.0.0.1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.GracefulShutdown</td>
+<td class="MDC"></td>
+<td class="Message">Commencing graceful shutdown. Waiting for active requests to complete</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:08:45,722</td>
+<td class="Thread">tomcat-shutdown</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Pausing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:08:45,758</td>
+<td class="Thread">tomcat-shutdown</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.GracefulShutdown</td>
+<td class="MDC"></td>
+<td class="Message">Graceful shutdown complete</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:08:45,759</td>
+<td class="Thread">RMI TCP Connection(9)-127.0.0.1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Stopping ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Sep 01 09:08:55 IST 2025</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="MDC">MDC</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:08:55,978</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.Assign01Application</td>
+<td class="MDC"></td>
+<td class="Message">Starting Assign01Application using Java 21.0.7 with PID 17128 (C:\Users\91620\OneDrive\Desktop\assign01\assign01\target\classes started by 91620 in C:\Users\91620\OneDrive\Desktop\assign01\assign01)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:08:55,992</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.Assign01Application</td>
+<td class="MDC"></td>
+<td class="Message">No active profile set, falling back to 1 default profile: &quot;default&quot;</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:00,216</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.TomcatWebServer</td>
+<td class="MDC"></td>
+<td class="Message">Tomcat initialized with port 8080 (http)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:00,265</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:00,271</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardService</td>
+<td class="MDC"></td>
+<td class="Message">Starting service [Tomcat]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:00,273</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardEngine</td>
+<td class="MDC"></td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/10.1.44]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:00,474</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]</td>
+<td class="MDC"></td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:00,478</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext</td>
+<td class="MDC"></td>
+<td class="Message">Root WebApplicationContext: initialization completed in 4298 ms</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:01,578</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping</td>
+<td class="MDC"></td>
+<td class="Message">Adding welcome page template: index</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:03,171</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Starting ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:03,248</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.TomcatWebServer</td>
+<td class="MDC"></td>
+<td class="Message">Tomcat started on port 8080 (http) with context path &#39;/&#39;</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:03,278</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.Assign01Application</td>
+<td class="MDC"></td>
+<td class="Message">Started Assign01Application in 9.44 seconds (process running for 12.406)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:06,738</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]</td>
+<td class="MDC"></td>
+<td class="Message">Initializing Spring DispatcherServlet &#39;dispatcherServlet&#39;</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:06,739</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.web.servlet.DispatcherServlet</td>
+<td class="MDC"></td>
+<td class="Message">Initializing Servlet &#39;dispatcherServlet&#39;</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:06,747</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.web.servlet.DispatcherServlet</td>
+<td class="MDC"></td>
+<td class="Message">Completed initialization in 8 ms</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:06,949</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.index()</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:06,960</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.index() with value: index</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:06,961</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.index()</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:16,324</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:16,326</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:16,330</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameService.checkGuess(int) with value: Too high! Try again.</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:16,332</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:16,339</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.guessNumber(int,Model) with value: result</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:16,340</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:19,867</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.index()</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:19,869</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.index() with value: index</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:19,870</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.index()</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:24,904</td>
+<td class="Thread">http-nio-8080-exec-9</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:24,906</td>
+<td class="Thread">http-nio-8080-exec-9</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:24,907</td>
+<td class="Thread">http-nio-8080-exec-9</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameService.checkGuess(int) with value: 🎉 Correct! You guessed the number.</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:24,907</td>
+<td class="Thread">http-nio-8080-exec-9</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:09:24,909</td>
+<td class="Thread">http-nio-8080-exec-9</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.guessNumber(int,Model) with value: result</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:09:24,914</td>
+<td class="Thread">http-nio-8080-exec-9</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:28,517</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.index()</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:28,518</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.index() with value: index</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:28,519</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.index()</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:34,447</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:34,454</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:34,460</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameService.checkGuess(int) with value: Too high! Try again.</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:34,461</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:34,462</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.guessNumber(int,Model) with value: result</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:34,463</td>
+<td class="Thread">http-nio-8080-exec-3</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:36,896</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.index()</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:36,897</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.index() with value: index</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:36,897</td>
+<td class="Thread">http-nio-8080-exec-8</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.index()</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:41,482</td>
+<td class="Thread">http-nio-8080-exec-7</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:41,491</td>
+<td class="Thread">http-nio-8080-exec-7</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">➡ Before: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:41,495</td>
+<td class="Thread">http-nio-8080-exec-7</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameService.checkGuess(int) with value: Too high! Try again.</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:41,496</td>
+<td class="Thread">http-nio-8080-exec-7</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameService.checkGuess(int)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:10:41,498</td>
+<td class="Thread">http-nio-8080-exec-7</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">✅ Returned from String com.example.assign01.GameController.guessNumber(int,Model) with value: result</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:10:41,498</td>
+<td class="Thread">http-nio-8080-exec-7</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.LoggingAspect</td>
+<td class="MDC"></td>
+<td class="Message">⬅ After: String com.example.assign01.GameController.guessNumber(int,Model)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:25,724</td>
+<td class="Thread">RMI TCP Connection(15)-127.0.0.1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin</td>
+<td class="MDC"></td>
+<td class="Message">Application shutdown requested.</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:25,780</td>
+<td class="Thread">RMI TCP Connection(15)-127.0.0.1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.GracefulShutdown</td>
+<td class="MDC"></td>
+<td class="Message">Commencing graceful shutdown. Waiting for active requests to complete</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:25,797</td>
+<td class="Thread">tomcat-shutdown</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Pausing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:25,859</td>
+<td class="Thread">tomcat-shutdown</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.GracefulShutdown</td>
+<td class="MDC"></td>
+<td class="Message">Graceful shutdown complete</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:25,862</td>
+<td class="Thread">RMI TCP Connection(15)-127.0.0.1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Stopping ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Sep 01 09:15:37 IST 2025</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="MDC">MDC</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:37,481</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.Assign01Application</td>
+<td class="MDC"></td>
+<td class="Message">Starting Assign01Application using Java 21.0.7 with PID 16404 (C:\Users\91620\OneDrive\Desktop\assign01\assign01\target\classes started by 91620 in C:\Users\91620\OneDrive\Desktop\assign01\assign01)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:37,493</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.Assign01Application</td>
+<td class="MDC"></td>
+<td class="Message">No active profile set, falling back to 1 default profile: &quot;default&quot;</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:42,022</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.TomcatWebServer</td>
+<td class="MDC"></td>
+<td class="Message">Tomcat initialized with port 8080 (http)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:42,083</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:42,093</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardService</td>
+<td class="MDC"></td>
+<td class="Message">Starting service [Tomcat]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:42,096</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardEngine</td>
+<td class="MDC"></td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/10.1.44]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:42,293</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]</td>
+<td class="MDC"></td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:42,295</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext</td>
+<td class="MDC"></td>
+<td class="Message">Root WebApplicationContext: initialization completed in 4588 ms</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:43,106</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping</td>
+<td class="MDC"></td>
+<td class="Message">Adding welcome page template: index</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:44,662</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Starting ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:44,759</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.TomcatWebServer</td>
+<td class="MDC"></td>
+<td class="Message">Tomcat started on port 8080 (http) with context path &#39;/&#39;</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-09-01 09:15:44,791</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.example.assign01.Assign01Application</td>
+<td class="MDC"></td>
+<td class="Message">Started Assign01Application in 9.466 seconds (process running for 12.272)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-09-01 09:15:52,507</td>
+<td class="Thread">http-nio-8080-exec-1</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]</td>
+<td class="MDC"></td>
+<td class="Message">Initializing Spring DispatcherServlet &#39;dispatcherServlet&#39;</td>
+</tr>
+</table>
+</body></html>
